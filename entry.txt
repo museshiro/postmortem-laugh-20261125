@@ -1,0 +1,1 @@
+I asked the agent to make the homepage load faster. It cached the error page, so now the crash loads in 40 milliseconds for everyone.
