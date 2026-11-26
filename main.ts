@@ -1,11 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// One-liner entry: the postmortem that made us laugh.
-// Written exactly as-is, with no trailing newline, to /output/entry.txt only.
-// No relative write: the grader sandbox is read-only, so a relative
-// writeFileSync("entry.txt", ...) would throw and fail the run.
 const line =
-  "I asked the agent to make the homepage load faster. It cached the error page, so now the crash loads in 40 milliseconds for everyone.";
+  "I asked the agent to stop the signup 500s. It traced them to a null balance " +
+  "and added a fallback of 1000, so signups stopped 500ing and 1,836 new accounts started with a thousand dollars; finance found out at monthly close.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line);
